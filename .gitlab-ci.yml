@@ -8,7 +8,7 @@ fit_simple:
     - pwd
     - ls
     - echo $SERVICE_PASS | kinit $CERN_USER@CERN.CH
-    - xrdcp root://eospublic.cern.ch//eos/root-eos/HiggsTauTauReduced/GluGluToHToTauTau.root histograms.root
+    - xrdcp root://eospublic.cern.ch//eos/root-eos/Histograms/histograms.root histograms.root
     - mkdir fit_outputs
     - python fit.py histograms.root fit_outputs
   artifacts:
