@@ -1,10 +1,9 @@
 stages:
   - fit
-
-image: rootproject/root-conda
     
 fit_simple:
   stage: fit
+  image: rootproject/root-conda
   script:
     - pwd
     - ls
